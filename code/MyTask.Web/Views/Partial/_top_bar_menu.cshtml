@@ -1,0 +1,32 @@
+﻿@model string
+<div id="top_bar">
+    <div class="md-top-bar">
+        <ul id="menu_top" class="uk-clearfix">
+            @if(Model == "Passengers")
+            {
+                <li class="uk-open">
+                    <a href="">Passengers</a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="">Passengers</a>
+                </li>
+            }
+            @if(Model == "AddNew")
+            {
+                <li class="uk-open">
+                    <a href="/add">Add New Booking</a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a href="/add">Add New Booking</a>
+                </li>
+            }
+
+        </ul>
+    </div>
+</div>
